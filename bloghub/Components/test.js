@@ -7,6 +7,7 @@ const Test = () => {
             {`
                 .main{
                     background-color: red;
+                    font-size: 20px;
                 }
             `}
         </style>

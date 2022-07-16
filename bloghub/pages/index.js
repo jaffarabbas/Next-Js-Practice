@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Script from 'next/script'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import Test from '../Components/test'
 
 export default function Home() {
   return (
@@ -29,9 +28,9 @@ export default function Home() {
 
         <p className={styles.description}>
           Blog Hub By Darklord Powered By JzSoftware 
-          <Test/>
         </p>
 
+        <Image src="/background.png" width={600} height={500}/>
         {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Documentation &rarr;</h2>

@@ -1,0 +1,7 @@
+{
+    "title": "How to Learn JavaScript",
+    "description": "JavaScript is a programming language that can be used to create dynamic webpages. This tutorial will teach you how to use JavaScript to create a simple webpage. You will learn how to use JavaScript to change the color of an HTML element, how to add a new element to the webpage, and how to create a simple calculator. You will also learn how to use the prompt() function to ask the user for input. You will also learn how to use the document.getElementById() function to find an element on the webpage. You will also learn how to use the document.getElementsByTagName() function to find all elements with a certain tag name on the webpage.",
+    "tags": ["javascript", "tutorial"],
+    "auther": "Tutorials Point",
+    "date": "2018-01-01"
+}

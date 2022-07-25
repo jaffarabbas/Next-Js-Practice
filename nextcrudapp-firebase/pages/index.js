@@ -11,6 +11,7 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const [alert, setAlert] = useState("success");
   const [alertMessage, setAlertMessage] = useState("");
+  const [todo, setTodo] = useState({ title: '', description: '' });
   const showAlert = (type, message) => {
     setAlert(type);
     setAlertMessage(message);
@@ -24,7 +25,7 @@ export default function Home() {
     setOpen(false);
   }
   return (
-    <TodoContext.Provider value={{showAlert}}>
+    <TodoContext.Provider value={{showAlert,todo,setTodo}}>
       <Container maxWidth="sm">
         <TodoForm />
         <Snackbar open={open} autoHideDuration={6000} onClose={handleClose} anchorOrigin={{vertical:"top",horizontal:"center"}}>

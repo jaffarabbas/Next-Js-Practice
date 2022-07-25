@@ -1,4 +1,4 @@
-import { collection, onSnapshot, orderBy, query, addDoc,serverTimestamp, deleteDoc, doc} from 'firebase/firestore';
+import { collection, onSnapshot, orderBy, query, addDoc,serverTimestamp, deleteDoc, updateDoc,doc} from 'firebase/firestore';
 import { db } from "../firebase";
 
 class TodoService {
@@ -23,6 +23,11 @@ class TodoService {
     deleteTodo = async (collectionName, id) => {
         let docRef = doc(db, collectionName,id);
         await deleteDoc(docRef);
+    }
+
+    updateTodo = async (collectionName, id, state) => {
+        let docRef = doc(db, collectionName,id);
+        await updateDoc(docRef, state);
     }
 }
 
